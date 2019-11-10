@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ariel/OneDrive - Politecnico di Milano/Desktop/Ariel/codici/C++/DateClass/Date.h
+iostream
+-
+
+C:/Users/ariel/OneDrive - Politecnico di Milano/Desktop/Ariel/codici/C++/DateClass/DiscountCurve.cpp
+DiscountCurve.h
+C:/Users/ariel/OneDrive - Politecnico di Milano/Desktop/Ariel/codici/C++/DateClass/DiscountCurve.h
+
+C:/Users/ariel/OneDrive - Politecnico di Milano/Desktop/Ariel/codici/C++/DateClass/DiscountCurve.h
+cmath
+-
+vector
+-
+Date.h
+C:/Users/ariel/OneDrive - Politecnico di Milano/Desktop/Ariel/codici/C++/DateClass/Date.h
+

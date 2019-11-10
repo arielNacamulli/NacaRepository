@@ -1,0 +1,3 @@
+C:/Users/ariel/OneDrive - Politecnico di Milano/Desktop/Ariel/codici/C++/DateClass/cmake-build-debug/CMakeFiles/DateClass.dir
+C:/Users/ariel/OneDrive - Politecnico di Milano/Desktop/Ariel/codici/C++/DateClass/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ariel/OneDrive - Politecnico di Milano/Desktop/Ariel/codici/C++/DateClass/cmake-build-debug/CMakeFiles/rebuild_cache.dir
