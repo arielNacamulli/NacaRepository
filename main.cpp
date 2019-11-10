@@ -2,34 +2,6 @@
 #include "DiscountCurve.h"
 
 int main() {
-    /*
-    Date data(9,06,1995);
-    data.print();
-    unsigned num = data.date2num();
-    num2date(num).print();
-
-    Date data2 = data + 100;
-    data2.print();
-
-    string s = "09061995";
-
-    Date data3(s,ddmmyyyy);
-
-    data3.print();
-
-
-    std::cout << std::stoi(s.substr(0,2)) << std::endl;
-
-    vector <double> a = {1,2,3,4};
-    vector <double> b = {1,3,5,7};
-    double c = interp1(a,b,2.1);
-    */
-
-    double r = 0.01;
-
-    double B = rate2discount(r,1);
-
-    std::cout << B << std::endl;
 
     vector<Date> Ddates = {Date(20,02,2008), Date(26,02,2008), Date(19,03,2008),
                           Date(21,04,2008), Date(19,05,2008),Date(19,8,2008),
@@ -62,9 +34,9 @@ int main() {
                               0.046849311,0.046804223,0.046759139,0.046714589,0.04667};
 
 
-    DiscountCurve ciao(settDate, Ddates, Dprices, FDates, FPrices, SDates, SPrices);
+    DiscountCurve Test(settDate, Ddates, Dprices, FDates, FPrices, SDates, SPrices);
 
-    curve a = ciao.bootstrap();
+    curve testCurve = Test.bootstrap();
 
 
     return 0;
