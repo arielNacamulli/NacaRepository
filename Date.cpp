@@ -23,24 +23,22 @@ Date::Date(const string &s, unsigned format) {
             day = stoi(s.substr(0, 2));
             month = stoi(s.substr(3, 2));
             year = stoi(s.substr(6));
+            break;
         case mmddyyyy:
             month = stoi(s.substr(0, 2));
             day = stoi(s.substr(2, 2));
             year = stoi(s.substr(4));
-
+            break;
         case mmddyyyy_:
             month = stoi(s.substr(0, 2));
             day = stoi(s.substr(3, 2));
             year = stoi(s.substr(6));
+            break;
         default:
             day = stoi(s.substr(0, 2));
             month = stoi(s.substr(2, 2));
             year = stoi(s.substr(4));
     }
-
-    if(day > daysInMonth(month,year))
-        std::cerr << "Month " << month << " doesn't have " << day << " days!" << std::endl;
-
 }
 
 Date::Date(unsigned int num) {
