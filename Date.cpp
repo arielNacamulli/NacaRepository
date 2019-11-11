@@ -187,11 +187,11 @@ double e30vs360(const Date &startDate, const Date &endDate) {
         return std::numeric_limits<double>::quiet_NaN();
     }
     unsigned int d1 = startDate.getDay();
-    unsigned int d2 = startDate.getDay();
+    unsigned int d2 = endDate.getDay();
     d1 -= d1==31;
     d2 -= d2==31;
 
-    return (endDate.getYear() - startDate.getYear()) + (endDate.getMonth() - startDate.getMonth())/12.0 + (d2 - d1)/360.0 ;
+    return (endDate.getYear() - startDate.getYear()) + (endDate.getMonth() - startDate.getMonth())/12.0 + (int)(d2 - d1)/360.0 ;
 }
 
 double yearfrac(const Date &startDate, const Date &endDate, unsigned flag = 0){
